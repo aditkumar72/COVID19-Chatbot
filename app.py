@@ -9,7 +9,7 @@ app.static_folder = 'static'
 def home():
     return render_template("index.html")
 
-@app.route("/get", , methods=['GET'])
+@app.route("/get", methods=['GET'])
 def get_bot_response():
     question = request.args.get('msg')
     return get_answer(question)
