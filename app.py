@@ -9,11 +9,11 @@ app.static_folder = 'static'
 def home():
     return render_template("index.html")
 
-@app.route("/get")
+@app.route("/get", methods=['GET'])
 def get_bot_response():
     question = request.args.get('msg')
     return get_answer(question)
 
 
 if __name__ == "__main__":
-    app.run(port='0.0.0.0')
+    app.run(debug=True, port=int(os.environ.get('PORT', 5000)))
