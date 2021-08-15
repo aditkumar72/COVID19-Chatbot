@@ -2,4 +2,4 @@
 
 ## Description
 
-A covid19 chatbot app built from scratch using Python and Flask. 
+A chat bot for answering question regarding Coronavirus.
